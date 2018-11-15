@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "@reducer": ["src/reducer"],
+            "@store": ["src/store"]
+        },
+        "sourceMap": true,
+        "target": "es5",
+        "jsx": "react",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "removeComments": true,
+        "strictNullChecks": false,
+        "allowSyntheticDefaultImports": true,
+        "pretty": true,
+        "lib": ["es2015", "dom", "es2017.object"],
+        "importHelpers": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}
