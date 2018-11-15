@@ -1,0 +1,70 @@
+{
+    "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+    "rules": {
+        "align": [true, "parameters", "arguments", "statements"], // 函数参数及语句必须对齐
+        "ban": false,
+        "class-name": true,
+        "comment-format": [true, "check-space"], // 单行注释以空格开始
+        "curly": true, // if/for/do/while等必须有大括号
+        "eofline": true, // 必须以换行符结束文件
+        "forin": false, // 防止for in 语句迭代原型上的属性，需用hasOwnProperty判断
+        "indent": [true, "spaces", 4], // 4个空格缩进
+        "interface-name": [true, "never-prefix"], // interface名称不能以"I"开头
+        "jsdoc-format": true,
+        "jsx-no-lambda": false,
+        "jsx-no-multiline-js": false,
+        "label-position": true, // 只能在do/for/while/switch等上使用label
+        "no-any": false, // 允许any
+        "no-arg": true, // 禁止使用arguments.callee
+        "no-bitwise": true, // 禁止使用位运算符
+        "no-console": [true, "log", "error", "debug", "info", "time", "timeEnd", "trace"], // 不能有console语句
+        "no-consecutive-blank-lines": true,
+        "no-construct": true, // 禁止使用new Number(foo) new String(foo)等
+        "no-debugger": true, // 禁止使用debugger语句
+        "no-submodule-imports": false, // 允许import xxx from 'foo/bar'导入方式
+        "arrow-parens": false, // 允许箭头函数左边无括号
+        "no-duplicate-variable": true, // 禁止一个块级作用域内重复声明变量
+        "no-empty-interface": false, // 禁止空的interface
+        "no-eval": true, // 禁止使用eval函数
+        "no-shadowed-variable": true,
+        "no-string-literal": false, // 禁止 obj["property"] 方式访问对象属性
+        "no-var-requires": false, // 允许require导入
+        "no-switch-case-fall-through": true,
+        "no-implicit-dependencies": false,
+        "no-trailing-whitespace": false, // 禁止行尾出现空格
+        "no-unused-expression": true, // 禁止无意义的表达式
+        "no-use-before-declare": true, // 禁止在声明前使用变量
+        "object-literal-sort-keys": false, // 允许对象的key不按字母排序
+        "member-access": false, // 允许类成员不使用public, private等修饰
+        "one-line": [true, "check-catch", "check-else", "check-open-brace", "check-whitespace"],
+        "quotemark": [true, "single", "jsx-double"],
+        "radix": true, // 使用parseInt方法需指定进制，parseInt('123', 10)
+        "semicolon": [true, "always"], // 语句分号结尾
+        "switch-default": true, // switch语句必须有default
+        "trailing-comma": [false], // 禁止对象或数组最后一项带逗号
+        "triple-equals": [true, "allow-null-check"], // 允许null比较时不比较恒等
+        "interface-over-type-literal": false, // 允许使用type代替interface
+        "typedef": [true, "parameter", "property-declaration"],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"], // 变量命名
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-module",
+            "check-operator",
+            "check-separator",
+            "check-type",
+            "check-typecast"
+        ] // 以上类型语句必须带空格
+    }
+}
