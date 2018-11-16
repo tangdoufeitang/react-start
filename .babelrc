@@ -4,7 +4,9 @@
       "@babel/preset-react"
     ],
     "plugins": [
-      "react-hot-loader/babel"
+      "react-hot-loader/babel",
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      "@babel/plugin-syntax-dynamic-import"
     ],
     "env": {
       "production": {
@@ -13,9 +15,7 @@
       "test": {
         "presets": [
             "@babel/preset-env", 
-            "@babel/preset-react", 
-            "@babel/plugin-proposal-decorators",
-            "@babel/plugin-syntax-dynamic-import"
+            "@babel/preset-react"         
         ]
       }
     }
